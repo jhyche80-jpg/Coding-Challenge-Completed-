@@ -1,7 +1,8 @@
 const inputName = document.getElementById('name')
 const inputEmail = document.getElementById('email')
-const errorName = document.getElementById('errorName')
+const formError = document.getElementById("formError")
 const contact = document.getElementById('contact-form')
+const emailError = document.getElementById('emailError')
 const submitBtn = document.getElementById
 document.addEventListener('DOMContentLoaded', function () {
 	const menu = document.getElementById('menu');
@@ -17,12 +18,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 contact.addEventListener('submit', function (event) {
 	event.preventDefault();
-	if (inputName.innerText.trim() === "") {
-		errorName.style.display = 'inline'
+	const name = inputName.value
+	const email = inputEmail.value
+	if (name.trim() === "" || email.trim() === "") {
+		formError.style.display = 'inline'
 
+	} else {
+		formError.style.display = 'none'
+		alert('Form submitted!');
 	}
 
-	alert('Form submitted!');
+
 });
 
 window.onscroll = function () {
