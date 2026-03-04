@@ -3,14 +3,15 @@ document.addEventListener('DOMContentLoaded', function () {
 	const menuBtn = document.getElementById('menu-btn');
 
 	function toggleMenu() {
+		console.log('button clicked ')
 		if (menu.style.display === "none") {
-			menu.style.display = "block";
+			menu.style.display === "block";
 		} else {
 			menu.style.display = "none";
 		}
 	}
 
-	menu.addEventListener('click', toggleMenu);
+	menuBtn.addEventListener('click', toggleMenu);
 });
 
 document.getElementById('contact-form').addEventListener('submit', function (event) {
