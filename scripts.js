@@ -1,14 +1,12 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
 	const menu = document.getElementById('menu');
 	const menuBtn = document.getElementById('menu-btn');
 
 	function toggleMenu() {
 		console.log('button clicked ')
-		if (menu.style.display === "none") {
-			menu.style.display === "block";
-		} else {
-			menu.style.display = "none";
-		}
+		menu.classList.toggle('visible')
 	}
 
 	menuBtn.addEventListener('click', toggleMenu);
