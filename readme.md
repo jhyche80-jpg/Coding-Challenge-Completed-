@@ -5,7 +5,7 @@ Mock-up: https://www.figma.com/design/naPtYuMBNXSNQJ1vGVxTso/Code-Challenge---20
 ------
 
 Our totally real client reached out saying their site is not working in a few different ways. First and foremost it doesn't match the mock-up they were provided, but even the page they were shown doesn't work as expected. Below are a few of the functional issues the client has noticed, but I'm sure there are some they haven't found yet.
-
+#
 [x] the menu doesn't open on click
 - I changed the function to console log when the button is clicked temporaially and then went to check what the page says when insepected 
 - 404 error it  the code is not recognizing that the button has been added 
@@ -13,7 +13,7 @@ Our totally real client reached out saying their site is not working in a few di
 
 
 [x] the back to top button shows all the time
-[] the form can submit even when the inputs are empty
+[x] the form can submit even when the inputs are empty
 - it isn't not reading the submit at all 
 
 [] there are a variety of performance issues

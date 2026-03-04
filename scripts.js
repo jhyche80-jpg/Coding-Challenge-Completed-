@@ -1,6 +1,5 @@
 const inputName = document.getElementById('name')
 const inputEmail = document.getElementById('email')
-const formError = document.getElementById("formError")
 const contact = document.getElementById('contact-form')
 const emailError = document.getElementById('emailError')
 const submitBtn = document.getElementById
@@ -10,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function toggleMenu() {
 		console.log('button clicked ')
+
 		menu.classList.toggle('visible')
 	}
 
@@ -20,13 +20,8 @@ contact.addEventListener('submit', function (event) {
 	event.preventDefault();
 	const name = inputName.value
 	const email = inputEmail.value
-	if (name.trim() === "" || email.trim() === "") {
-		formError.style.display = 'inline'
+	alert('Form submitted!');
 
-	} else {
-		formError.style.display = 'none'
-		alert('Form submitted!');
-	}
 
 
 });
