@@ -266,8 +266,8 @@ main {
 
 #supportingImg {
 
-	width: 50%;
-	height: 300px;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -281,9 +281,11 @@ main {
 }
 
 #column-2 {
-
-	width: 50%;
+	margin-top: 50px;
+	width: 95%;
+	height: 100%;
 	right: 0;
+	border-radius: 20px;
 
 }
 
@@ -326,6 +328,8 @@ main {
 
 	#width-container1 {
 		flex-direction: column;
+		height: 100%;
+		border: solid black;
 
 	}
 
@@ -350,7 +354,15 @@ main {
 
 	#back-to-top {
 		position: fixed;
-width: 10%;
+		width: 10%;
 		left: 50%;
+	}
+
+	#column-2 {
+
+		width: 100%;
+		height: 100%;
+		right: 0;
+
 	}
 }
