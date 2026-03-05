@@ -16,8 +16,8 @@ Our totally real client reached out saying their site is not working in a few di
 [x] the form can submit even when the inputs are empty
 - it isn't not reading the submit at all 
 
-[] there are a variety of performance issues
-	- [] images are not optimized for mobile
-	- [] scrolling is a bit jumpy and sluggish
+[x] there are a variety of performance issues
+	- [x] images are not optimized for mobile
+	- [x] scrolling is a bit jumpy and sluggish
 
 Just from glancing at the code, I can see quite a few standards issues along with accessibility issues. The CSS could also be implemented more efficiently with less specificity by utilizing classes along with being more consistent.

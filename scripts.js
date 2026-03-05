@@ -2,7 +2,7 @@ const inputName = document.getElementById('name')
 const inputEmail = document.getElementById('email')
 const contact = document.getElementById('contact-form')
 const emailError = document.getElementById('emailError')
-
+const backToTop = document.getElementById('back-to-top');
 document.addEventListener('DOMContentLoaded', function () {
 	const menu = document.getElementById('menu');
 	const menuBtn = document.getElementById('menu-btn');
@@ -42,3 +42,11 @@ window.onscroll = function () {
 
 
 };
+backToTop.addEventListener('click', function (e) {
+	e.preventDefault();
+
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	});
+});
