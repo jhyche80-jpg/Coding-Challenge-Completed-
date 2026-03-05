@@ -27,7 +27,7 @@ contact.addEventListener('submit', function (event) {
 });
 
 window.onscroll = function () {
-	if (window.scrollY > 500) {
+	if (window.scrollY < 500) {
 		document.getElementById('back-to-top').style.display = "none";
 	} else {
 		document.getElementById('back-to-top').style.display = "block";

@@ -12,6 +12,7 @@ body {
 	color: var(--dark-gray-hex);
 	font-size: 16px;
 	font-family: 'DM Sans', Arial, sans-serif;
+	height: 175vh;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
 	display: flex;
 	gap: 2em;
 	width: auto;
-	height: 20%;
+	height: 5%;
 	justify-content: space-between;
 	padding: 20px;
 	border-radius: 0.5em;
@@ -123,10 +124,16 @@ ul {
 
 footer {
 	padding: 20px;
+	position: relative;
 	border-radius: 0.5em;
 	background: #222;
 	color: #333;
 	text-align: center;
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+
 }
 
 section {
@@ -218,6 +225,14 @@ input {
 	height: 90%;
 }
 
+#backImg {
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	filter: invert(1);
+
+}
+
 #formSec {
 	display: flex;
 	width: 50%;
@@ -246,4 +261,14 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+#back-to-top {
+	position: absolute;
+	bottom: 70px;
+	right: 70px;
+	background-color: orange;
+	padding: 5px;
+	border-radius: 50%;
+	color: #fff;
 }
