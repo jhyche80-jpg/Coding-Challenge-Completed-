@@ -347,4 +347,10 @@ main {
 	.section-title {
 		font-size: 1.75rem;
 	}
+
+	#back-to-top {
+		position: fixed;
+width: 10%;
+		left: 50%;
+	}
 }
